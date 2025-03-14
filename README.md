@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Front-End
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is a Next.js-based front-end project structured for handling multiple test scenarios. The project is designed with modular components and follows best practices for maintainability and scalability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+
+```
+unit-front-end/
+│-- .next/                 # Next.js build output
+│-- node_modules/          # Dependencies
+│-- public/                # Static assets
+│-- src/
+│   ├── app/               # Main application directory
+│   │   ├── test2/         # Test 2 page
+│   │   │   ├── page.js    # Test 2 component
+│   │   ├── test3/         # Test 3 page
+│   │   │   ├── page.js    # Test 3 component
+│   │   ├── favicon.ico    # Favicon for the app
+│   │   ├── globals.css    # Global styles
+│   │   ├── layout.js      # Layout component
+│   │   ├── page.js        # Test 1 page
+│-- .gitignore             # Git ignore file
+│-- jsconfig.json          # JS config for Next.js
+│-- next.config.mjs        # Next.js configuration
+│-- package-lock.json      # Lock file for dependencies
+│-- package.json           # Project metadata and dependencies
+│-- postcss.config.mjs     # PostCSS configuration
+│-- README.md              # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo/unit-front-end.git
+   ```
+2. Navigate to the project folder:
+   ```sh
+   cd unit-front-end
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Running the Project
 
-## Learn More
+To start the development server, run:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Then, open `http://localhost:3000` in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Modular test pages (`test2`, `test3`)
+- PIN input UI using Next.js and React
+- Styled components with Tailwind CSS
+- Routing with Next.js `app` directory structure
