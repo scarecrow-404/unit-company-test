@@ -55,3 +55,6 @@ npm run dev
 
 Then, open `http://localhost:3000` in your browser.
 
+## Try it on netlify
+https://celadon-blancmange-c4f787.netlify.app/
+
