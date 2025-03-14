@@ -55,9 +55,3 @@ npm run dev
 
 Then, open `http://localhost:3000` in your browser.
 
-## Features
-
-- Modular test pages (`test2`, `test3`)
-- PIN input UI using Next.js and React
-- Styled components with Tailwind CSS
-- Routing with Next.js `app` directory structure
